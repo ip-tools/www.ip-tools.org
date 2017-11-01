@@ -5,4 +5,5 @@ require('materialize-css/dist/js/materialize.js');
 //require('csi/src/csi.js');
 
 require('../css/material-icons.css');
+require('pygments-css/friendly.css');
 require('../css/main.css');
