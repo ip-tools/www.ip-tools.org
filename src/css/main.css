@@ -27,3 +27,8 @@ i.artefact {
 .align-center {
     text-align: center;
 }
+
+.github-fork-ribbon {
+    -webkit-box-sizing: content-box !important;
+    box-sizing: content-box !important;
+}

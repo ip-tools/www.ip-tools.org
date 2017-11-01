@@ -6,4 +6,6 @@ require('materialize-css/dist/js/materialize.js');
 
 require('../css/material-icons.css');
 require('pygments-css/friendly.css');
+require('github-fork-ribbon-css/gh-fork-ribbon.css');
+
 require('../css/main.css');
