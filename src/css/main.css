@@ -17,7 +17,7 @@ i.artefact {
 }
 
 .card.artefact > .card-image {
-    height: 450px;
+    height: 65%;
 }
 
 .card.artefact > .card-content {
