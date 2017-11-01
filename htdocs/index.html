@@ -3,19 +3,21 @@
 
     <head>
 
+        <meta charset="UTF-8"/>
+
         <!-- Let browser know website is optimized for mobile -->
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
         <!-- Load whole application -->
 
         <!-- Development -->
-        <script type="text/javascript" src="./assets/commons.bundle.js"></script>
-        <script type="text/javascript" src="./assets/app.bundle.js"></script>
+        <script type="text/javascript" src="./static/assets/commons.bundle.js"></script>
+        <script type="text/javascript" src="./static/assets/app.bundle.js"></script>
 
         <!-- Production -->
         <!--
-        <script type="text/javascript" src="./assets/commons.bundle.min.js"></script>
-        <script type="text/javascript" src="./assets/app.bundle.min.js"></script>
+        <script type="text/javascript" src="./static/assets/commons.bundle.min.js"></script>
+        <script type="text/javascript" src="./static/assets/app.bundle.min.js"></script>
         -->
 
     </head>
@@ -25,9 +27,171 @@
         <br/>
 
         <div class="container">
+
             <div class="card-panel">
-                <p class="flow-text">Hello <a href="http://materializecss.com/">MaterializeCSS</a>.</p>
+                <h4>IP Tools</h4>
+                <p class="flow-text">
+                    We are developing high-quality patent data processing software
+                    based on modern components and technologies.
+                    Open source and a friendly community.
+                </p>
             </div>
+
+            <div class="card-panel">
+                <h5>A curated list of software components</h5>
+            </div>
+
+
+            <div class="row">
+                <!-- PatZilla -->
+                <div class="col s12 m12 l6">
+                    <div class="card artefact z-depth-3 hoverable sticky-action">
+                        <div class="card-image align-center">
+                            <img src="./static/img/tooling-screwdriver.png" class="circle responsive-img" style="width: 30em">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title activator">PatZilla IP Navigator<i class="material-icons right">more_vert</i></span>
+                            <p>
+                                PatZilla is a modular patent information research platform and toolkit
+                                with a modern user interface.
+
+                                It provides convenient and efficient access to a number of professional patent search APIs.
+                            </p>
+                        </div>
+                        <div class="card-reveal">
+                            <span class="card-title grey-text text-darken-4">PatZilla IP Navigator<i class="material-icons right">close</i></span>
+                            <p>
+                                PatZilla is a modular patent information research platform and toolkit
+                                with a modern user interface.
+
+                                It provides convenient and efficient access to a number of professional patent search APIs.
+                            </p>
+                            <p>
+                                Currently, it implements access to:
+                            <ul class="browser-default">
+                                <li>
+                                    <a href="https://ops.epo.org/" target="_blank">EPO Open Patent Services (OPS)</a>
+                                </li>
+                                <li>
+                                    <a href="https://depatisnet.dpma.de" target="_blank">DPMA DEPATISnet</a>
+                                </li>
+                                <li>
+                                    <a href="https://www.ificlaims.com/" target="_blank">IFI CLAIMS® Direct</a>
+                                </li>
+                                <li>
+                                    <a href="https://depa.tech/" target="_blank">MTC depa.tech</a>
+                                </li>
+                            </ul>
+                            </p>
+                            <p>
+                                Under the hood, it uses contemporary software components and technologies:
+                            <ul class="browser-default">
+                                <li>
+                                    <a href="http://nginx.org/" target="_blank">Nginx</a>
+                                </li>
+                                <li>
+                                    <a href="https://uwsgi-docs.readthedocs.io/" target="_blank">uWSGI</a>
+                                </li>
+                                <li>
+                                    <a href="https://www.mongodb.com/" target="_blank">MongoDB</a>
+                                </li>
+                                <li>
+                                    <a href="https://www.python.org/" target="_blank">Python</a>
+                                </li>
+                                <li>
+                                    <a href="https://trypyramid.com/" target="_blank">Pyramid</a>
+                                </li>
+                                <li>
+                                    <a href="https://celery.readthedocs.io/" target="_blank">Celery</a>
+                                </li>
+                                <li>
+                                    <a href="http://backbonejs.org/" target="_blank">Backbone.js</a>
+                                </li>
+                                <li>
+                                    <a href="https://marionettejs.com/" target="_blank">Marionette.js</a>
+                                </li>
+                                <li>
+                                    ... and some more.
+                                </li>
+                            </ul>
+                            </p>
+                        </div>
+                        <div class="card-action">
+                            <div class="row no-margin">
+                                <a class="col s3 push-s0 blue-grey-text text-darken-2 waves-effect waves-light btn blue-grey lighten-4" href="https://github.com/ip-tools/ip-navigator">GitHub</a>
+                                <a class="col s2 push-s1 blue-grey-text text-darken-2 waves-effect waves-light btn blue-grey lighten-4" href="https://pypi.org/project/patzilla/">PyPI</a>
+                                <a class="col s2 push-s2 blue-grey-text text-darken-2 waves-effect waves-light btn blue-grey lighten-4" href="https://docs.ip-tools.org/ip-navigator/">Docs</a>
+                                <a class="col s2 push-s3 blue-grey-text text-darken-2 waves-effect waves-light btn blue-grey lighten-4" href="https://patentview.ip-tools.io/?op=eyJhbGciOiAiUlMyNTYiLCAidHlwIjogIkpXVCJ9.eyJqdGkiOiAiZDZUT3Ewc3NkRDB6TTVCSGdhOEJrQT09IiwgImRhdGEiOiB7InByb2plY3QiOiAicXVlcnktcGVybWFsaW5rIiwgInF1ZXJ5IjogInR4dD0oU1M3IG9yICh0ZWxlY29tbXVuaWNhdGlvbiBvciBjb21tdW5pY2F0aW9uIG9yIGNvbXVuaWNhY2lcdTAwZjNuKSBvciAobW9iaWxlIG9yIE1vYmlsZnVua25ldHopIG9yIChuZXR3b3JrIG9yIChzZWN1cml0eSBvciBTaWNoZXJ1bmcpKSkgYW5kIHBhPShtb2JpbCBvciBrb21tdW5pa2F0aW9uKSBhbmQgY2w9KEgwNFcxMi8xMiBvciBIMDRMNjMvMDI4MSBvciBIMDRMNjMvMDQxNCkgbm90IHBuPShDTiBvciBDQSBvciBKUCkiLCAibW9kZSI6ICJsaXZldmlldyIsICJjb250ZXh0IjogInZpZXdlciIsICJkYXRhc291cmNlIjogIm9wcyJ9LCAibmJmIjogMTUwNzgyNjYxNywgImV4cCI6IDE2NjMzNDY2MTcsICJpYXQiOiAxNTA3ODI2NjE3fQ.fCl7I5wPd0r48O48UkVQxzw9QOy5PjFaFecmAoYisbM-Her9Z6R0E2hxc82TSdH68gz379jQe5v9eF6g620aG4odTOXtdhyoDrWcb-GJcfR-0BfpiqPRwzLng53ape69">Demo</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- uspto-opendata-python -->
+                <div class="col s12 m12 l6">
+                    <div class="card artefact z-depth-3 hoverable sticky-action">
+                        <div class="card-image align-center">
+                            <i class="material-icons artefact" style="margin-top: 0.4em">account_balance</i>
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title activator">USPTO Open Data API client<i class="material-icons right">more_vert</i></span>
+                            <p>
+                                A client library and command line program for accessing the USPTO Open Data APIs, written in Python.
+                            </p>
+                        </div>
+                        <div class="card-reveal">
+                            <span class="card-title grey-text text-darken-4">USPTO Open Data API client<i class="material-icons right">close</i></span>
+                            <p>
+                                A client library and command line program for accessing the USPTO Open Data APIs, written in Python.
+                                <br/><br/>
+
+                                Currently, it implements access to:
+                            <ul class="browser-default">
+                                <li>
+                                    <a href="https://pairbulkdata.uspto.gov/" target="_blank">PAIR Bulk Data (PBD) system</a>
+                                </li>
+                                <li>
+                                    <a href="https://ped.uspto.gov/peds/" target="_blank">Patent Examination Data System (PEDS)</a>
+                                </li>
+                            </ul>
+                            </p>
+
+                            <h5>Synopsis</h5>
+                            <div class="codehilite">
+                                <div class="syntax"><pre><span></span><span class="c1"># Initialize</span>
+<span class="kn">from</span> <span class="nn">uspto.pbd.client</span> <span class="kn">import</span> <span class="n">UsptoPairBulkDataClient</span>
+<span class="n">client</span> <span class="o">=</span> <span class="n">UsptoPairBulkDataClient</span><span class="p">()</span>
+
+<span class="c1"># Search by expression</span>
+<span class="n">result</span> <span class="o">=</span> <span class="n">client</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="s1">'firstNamedApplicant:(nasa)'</span><span class="p">)</span>
+
+<span class="c1"># Acquire single document in JSON and XML formats</span>
+<span class="n">result</span> <span class="o">=</span> <span class="n">client</span><span class="o">.</span><span class="n">download_document</span><span class="p">(</span><span class="s1">'PP28532'</span><span class="p">)</span>
+</pre></div>
+                            </div>
+
+                            <h5>Command line usage</h5>
+                            <div class="codehilite">
+                                <div class="syntax"><pre><span></span><span class="c1"># Fetch document by US application publication</span>
+<span class="c1"># number and pretty-print JSON result</span>
+uspto-pbd get <span class="s2">"2017/0293197"</span> <span class="se">\</span>
+    --type<span class="o">=</span>publication --format<span class="o">=</span>json --pretty
+</pre></div>
+                            </div>
+
+                        </div>
+                        <div class="card-action">
+                            <div class="row no-margin">
+                                <a class="col s3 push-s0 blue-grey-text text-darken-2 waves-effect waves-light btn blue-grey lighten-4" href="https://github.com/ip-tools/uspto-opendata-python">GitHub</a>
+                                <a class="col s2 push-s1 blue-grey-text text-darken-2 waves-effect waves-light btn blue-grey lighten-4" href="https://pypi.org/project/uspto-opendata-python/">PyPI</a>
+                                <a class="col s5 push-s2 blue-grey-text text-darken-2 waves-effect waves-light btn blue-grey lighten-4" href="https://docs.ip-tools.org/uspto-opendata-python/">Documentation</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
         </div>
 
     </body>

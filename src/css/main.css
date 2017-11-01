@@ -1,3 +1,27 @@
 body {
     background: lightgray;
 }
+
+.row .no-margin {
+    margin-bottom: inherit;
+}
+
+i.artefact {
+    font-size: 18rem;
+}
+
+.card.artefact {
+    height: 700px;
+}
+
+.card.artefact > .card-image {
+    height: 450px;
+}
+
+.card.artefact > .card-content {
+    height: 180px;
+}
+
+.align-center {
+    text-align: center;
+}
