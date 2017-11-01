@@ -1,3 +1,3 @@
 webserver:
-	cd htdocs; python -m SimpleHTTPServer 8000; cd ..
+	cd htdocs; python -m SimpleHTTPServer 8001; cd ..
 

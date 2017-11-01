@@ -1,7 +1,7 @@
 /.idea
 .DS_Store
-/htdocs/assets/*
-!/htdocs/assets/README.txt
+/htdocs/static/assets/*
+!/htdocs/static/assets/README.txt
 /node_modules
 yarn-error.log
 yarn.lock

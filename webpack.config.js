@@ -7,7 +7,10 @@ module.exports = {
     devtool: "cheap-source-map",
 
     entry: {
-        'app': [path.resolve('src', 'js', 'main')],
+        'app': [
+            path.resolve('src', 'js', 'main'),
+            //path.resolve('htdocs', 'index.html'),
+        ],
     },
 
     amd: {
@@ -21,9 +24,9 @@ module.exports = {
     },
 
     output: {
-        path: path.resolve(__dirname, 'htdocs', 'assets'),
+        path: path.resolve(__dirname, 'htdocs', 'static', 'assets'),
         filename: '[name].bundle.js',
-        publicPath: './assets/',
+        publicPath: './static/assets/',
     },
 
     module: {
