@@ -6,6 +6,10 @@ www.ip-tools.org CHANGES
 next release
 ------------
 
+2017-11-01 0.2.0
+----------------
+- Add R packages "opsrdev" and "lensr" by Paul Oldham
+
 2017-11-01 0.1.1
 ----------------
 - Replace hosted version of "material-icons.woff2"
