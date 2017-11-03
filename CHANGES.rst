@@ -6,6 +6,10 @@ www.ip-tools.org CHANGES
 next release
 ------------
 
+2017-11-03 0.3.0
+----------------
+- Add author attributions
+
 2017-11-01 0.2.0
 ----------------
 - Add R packages "opsrdev" and "lensr" by Paul Oldham
