@@ -8,6 +8,7 @@ next release
 - Add "bumpversion" and corresponding tooling
 - Add content sections navigateable by tabs
 - Add WIPO PATENTSCOPE client for Ruby
+- Update USPTO logo
 
 
 2017-11-03 0.3.0
