@@ -258,6 +258,57 @@ uspto-pbd get <span class="s2">"2017/0293197"</span> <span class="se">\</span>
                     </div>
                 </div>
 
+
+                <!-- pairdata gem -->
+                <div class="col s12 m12 l6">
+                    <div class="card artefact z-depth-3 hoverable sticky-action">
+                        <div class="card-image align-center">
+                            <img src="./static/img/uspto-logo.jpg" class="circle responsive-img" style="width: 60%; left: 20%; top: 35%">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title activator">USPTO PAIR Bulk Data API client<i class="material-icons right">more_vert</i></span>
+                            <p>
+                                API wrapper around the PAIR Bulk Data US patent office database, written in Ruby.
+                            </p>
+                            <div class="author">
+                                Author: <a href="https://github.com/ephesus" target="_blank">James Rubingh</a>
+                            </div>
+                        </div>
+                        <div class="card-reveal">
+                            <span class="card-title grey-text text-darken-4">USPTO PAIR Bulk Data API client<i class="material-icons right">close</i></span>
+                            <p>
+                                API wrapper around the PAIR Bulk Data US patent office database, written in Ruby.
+                                <br/><br/>
+
+                                Currently, it implements access to:
+                            <ul class="browser-default">
+                                <li>
+                                    <a href="https://pairbulkdata.uspto.gov/" target="_blank">PAIR Bulk Data (PBD) system</a>
+                                </li>
+                            </ul>
+                            </p>
+
+                            <h5>Synopsis</h5>
+                            <div class="codehilite">
+                                <div class="syntax"><pre><span></span><span class="c1"># Create a pd object, and go to town</span>
+<span class="n">client</span> <span class="o">=</span> <span class="no">Pairdata</span><span class="o">::</span><span class="no">Client</span><span class="o">.</span><span class="n">new</span><span class="p">()</span>
+<span class="n">res</span> <span class="o">=</span> <span class="n">client</span><span class="o">.</span><span class="n">pair_sync</span><span class="p">(</span><span class="ss">searchText</span><span class="p">:</span> <span class="s1">'12432343'</span><span class="p">)</span>
+<span class="nb">puts</span> <span class="n">res</span><span class="o">.</span><span class="n">appStatus</span>
+<span class="nb">puts</span> <span class="n">res</span><span class="o">.</span><span class="n">patentTitle</span>
+</pre></div>
+                            </div>
+
+                        </div>
+                        <div class="card-action">
+                            <div class="row no-margin">
+                                <a class="col s3 push-s0 blue-grey-text text-darken-2 waves-effect waves-light btn blue-grey lighten-4" href="https://github.com/ephesus/pairdata">GitHub</a>
+                                <a class="col s5 push-s4 blue-grey-text text-darken-2 waves-effect waves-light btn blue-grey lighten-4" href="https://github.com/ephesus/pairdata/blob/master/README.md">Documentation</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
                 <!-- patentscope gem -->
                 <div class="col s12 m12 l6">
                     <div class="card artefact z-depth-3 hoverable sticky-action">

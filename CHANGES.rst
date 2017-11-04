@@ -9,6 +9,7 @@ next release
 - Add content sections navigateable by tabs
 - Add WIPO PATENTSCOPE client for Ruby
 - Update USPTO logo
+- Add USPTO PAIR Bulk Data client for Ruby
 
 
 2017-11-03 0.3.0
