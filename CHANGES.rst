@@ -7,6 +7,7 @@ next release
 ------------
 - Add USPTO TSDR client "Plumage"
 - Add R package for accessing PatentsView
+- Add “Patents View App” and “Trademark Status App” from USPTO
 
 2017-11-04 0.4.0
 ----------------
