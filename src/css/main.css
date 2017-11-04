@@ -20,14 +20,20 @@ i.artefact {
     height: 65%;
 }
 
-.card.artefact > .card-content {
+.card.artefact .card-content {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     height: 180px;
 }
 
-.card.artefact > .card-content > .author {
+.card.resource .card-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-content > .author {
     align-self: flex-end;
     text-align: right;
 }

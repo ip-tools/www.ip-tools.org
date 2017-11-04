@@ -5,12 +5,15 @@ www.ip-tools.org CHANGES
 
 next release
 ------------
+
+2017-11-04 0.4.0
+----------------
 - Add "bumpversion" and corresponding tooling
 - Add content sections navigateable by tabs
 - Add WIPO PATENTSCOPE client for Ruby
 - Update USPTO logo
 - Add USPTO PAIR Bulk Data client for Ruby
-
+- Add “WIPO Manual on Open Source Patent Analytics” and “Raw Patent Data blog”
 
 2017-11-03 0.3.0
 ----------------
