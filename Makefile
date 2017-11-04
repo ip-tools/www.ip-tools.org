@@ -5,9 +5,9 @@ webserver:
 	cd htdocs; python -m SimpleHTTPServer 8001; cd ..
 
 
-# ===================
-# bumpversion snippet
-# ===================
+# ===========
+# bumpversion
+# ===========
 
 $(eval venvpath     := .venv27)
 $(eval bumpversion  := $(venvpath)/bin/bumpversion)
@@ -19,5 +19,13 @@ bumpversion: virtualenv
 	@$(venvpath)/bin/pip install bumpversion
 	$(bumpversion) $(bump)
 
-release: bumpversion
 
+# =======
+# release
+# =======
+
+push:
+	git push && git push --tags
+
+
+release: bumpversion push
