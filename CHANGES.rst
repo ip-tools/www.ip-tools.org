@@ -5,6 +5,7 @@ www.ip-tools.org CHANGES
 
 next release
 ------------
+- Add USPTO TSDR client "Plumage"
 
 2017-11-04 0.4.0
 ----------------
@@ -21,7 +22,7 @@ next release
 
 2017-11-01 0.2.0
 ----------------
-- Add R packages "opsrdev" and "lensr" by Paul Oldham
+- Add R packages "opsrdev" and "lensr"
 
 2017-11-01 0.1.1
 ----------------

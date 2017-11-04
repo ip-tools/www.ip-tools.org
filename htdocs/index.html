@@ -6,8 +6,8 @@
     <meta charset="UTF-8"/>
 
     <title>IP Tools: Open source patent information software</title>
-    <meta name="description" content="We are developing innovative patent information software based on modern components and technologies. Open source and a friendly community.">
-    <meta name="keywords" content="patent, patents, patent search, patent data, information, information retrieval, intellectual property, research, researcher, researchers, research data, research tool, research and development, epo, ops, dpma, uspto, wipo, patentscope, the lens, open data, opendata, open source, free software">
+    <meta name="description" content="We are developing innovative software for processing intellectual property information based on modern components and technologies. Open source and a friendly community.">
+    <meta name="keywords" content="patent, patents, patent search, patent data, trademark, trademarks, trademark search, trademark data, information, information retrieval, intellectual property, research, researcher, researchers, research data, research tool, research and development, epo, ops, dpma, uspto, wipo, patentscope, the lens, open data, opendata, open source, free software">
 
     <!-- Let browser know website is optimized for mobile -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -35,7 +35,7 @@
         <div class="card-panel">
             <h4>IP Tools</h4>
             <p class="flow-text">
-                We are developing innovative patent information software
+                We are developing innovative software for processing intellectual property information
                 based on modern components and technologies.
                 Open source and a friendly community.
             </p>
@@ -303,6 +303,82 @@ uspto-pbd get <span class="s2">"2017/0293197"</span> <span class="se">\</span>
                             <div class="row no-margin">
                                 <a class="col s3 push-s0 blue-grey-text text-darken-2 waves-effect waves-light btn blue-grey lighten-4" href="https://github.com/ephesus/pairdata">GitHub</a>
                                 <a class="col s5 push-s4 blue-grey-text text-darken-2 waves-effect waves-light btn blue-grey lighten-4" href="https://github.com/ephesus/pairdata/blob/master/README.md">Documentation</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- plumage -->
+                <div class="col s12 m12 l6">
+                    <div class="card artefact z-depth-3 hoverable sticky-action">
+                        <div class="card-image align-center">
+                            <img src="./static/img/uspto-logo.jpg" class="responsive-img" style="width: 60%; left: 20%; top: 35%">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title activator">USPTO TSDR client<i class="material-icons right">more_vert</i></span>
+                            <p>
+                                A library to obtain trademark status and other information from the USPTO Trademark Status & Document Retrieval system (TSDR)
+                                with implementations for Python and .NET.
+                            </p>
+                            <div class="author">
+                                Author: <a href="https://github.com/codingatty" target="_blank">Terry Carroll</a>
+                            </div>
+                        </div>
+                        <div class="card-reveal">
+                            <span class="card-title grey-text text-darken-4">USPTO TSDR client<i class="material-icons right">close</i></span>
+                            <p>
+                                A library to obtain trademark status and other information from the USPTO Trademark Status & Document Retrieval system (TSDR)
+                                with implementations for Python and .NET.
+                                <br/><br/>
+
+                                Currently, it implements access to:
+                            <ul class="browser-default">
+                                <li>
+                                    <a href="https://tsdr.uspto.gov/" target="_blank">USPTO TSDR system</a>
+                                </li>
+                            </ul>
+                            </p>
+
+                            <h5>Synopsis</h5>
+                            <br/>
+
+                            <h6><strong>Python</strong></h6>
+                            <div class="codehilite">
+                                <div class="syntax"><pre><span></span><span class="c1"># Initialize</span>
+<span class="kn">from</span> <span class="nn">Plumage</span> <span class="kn">import</span> <span class="n">plumage</span>
+<span class="n">client</span> <span class="o">=</span> <span class="n">plumage</span><span class="o">.</span><span class="n">TSDRReq</span><span class="p">()</span>
+
+<span class="c1"># Get info on application serial no. 75/181,334</span>
+<span class="n">client</span><span class="o">.</span><span class="n">getTSDRInfo</span><span class="p">(</span><span class="s2">"75181334"</span><span class="p">,</span> <span class="s2">"s"</span><span class="p">)</span>
+
+<span class="c1"># Access some attributes</span>
+<span class="k">print</span> <span class="s2">"Trademark text: "</span><span class="p">,</span> \
+    <span class="n">client</span><span class="o">.</span><span class="n">TSDRMap</span><span class="p">[</span><span class="s2">"MarkVerbalElementText"</span><span class="p">]</span>
+</pre></div>
+                            </div>
+                            <hr/>
+
+                            <h6><strong>C#</strong></h6>
+                            <div class="codehilite">
+                                <div class="syntax"><pre><span></span><span class="c1">// Initialize</span>
+<span class="n">Plumage</span><span class="p">.</span><span class="n">TSDRReq</span> <span class="n">client</span> <span class="p">=</span> <span class="k">new</span> <span class="n">Plumage</span><span class="p">.</span><span class="n">TSDRReq</span><span class="p">();</span>
+
+<span class="c1">// Get info on registration no. 2,564,831</span>
+<span class="n">client</span><span class="p">.</span><span class="n">getTSDRInfo</span><span class="p">(</span><span class="s">"2564831"</span><span class="p">,</span> <span class="s">"r"</span><span class="p">);</span>
+
+<span class="c1">// Access some attributes</span>
+<span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">"Trademark text: "</span> <span class="p">+</span>
+    <span class="n">client</span><span class="p">.</span><span class="n">TSDRMap</span><span class="p">[</span><span class="s">"MarkVerbalElementText"</span><span class="p">]);</span>
+</pre></div>
+                            </div>
+
+
+                        </div>
+                        <div class="card-action">
+                            <div class="row no-margin">
+                                <a class="col s3 push-s0 blue-grey-text text-darken-2 waves-effect waves-light btn blue-grey lighten-4" href="https://github.com/codingatty/Plumage">GitHub</a>
+                                <a class="col s5 push-s4 blue-grey-text text-darken-2 waves-effect waves-light btn blue-grey lighten-4" href="https://github.com/codingatty/Plumage/wiki">Documentation</a>
                             </div>
                         </div>
                     </div>
