@@ -45,3 +45,8 @@ i.artefact {
     -webkit-box-sizing: content-box !important;
     box-sizing: content-box !important;
 }
+.footer {
+    font-size: smaller;
+    text-align: center;
+    padding: 12px;
+}

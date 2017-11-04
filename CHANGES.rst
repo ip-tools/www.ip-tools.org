@@ -5,6 +5,8 @@ www.ip-tools.org CHANGES
 
 next release
 ------------
+- Add "bumpversion" and corresponding tooling
+
 
 2017-11-03 0.3.0
 ----------------
