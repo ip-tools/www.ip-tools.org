@@ -6,6 +6,7 @@ www.ip-tools.org CHANGES
 next release
 ------------
 - Add "bumpversion" and corresponding tooling
+- Add content sections navigateable by tabs
 
 
 2017-11-03 0.3.0

@@ -1,254 +1,73 @@
 <!DOCTYPE html>
 <html>
 
-    <head>
+<head>
 
-        <meta charset="UTF-8"/>
+    <meta charset="UTF-8"/>
 
-        <!-- Let browser know website is optimized for mobile -->
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>IP Tools: Open source patent information software</title>
+    <meta name="description" content="We are developing innovative patent information software based on modern components and technologies. Open source and a friendly community.">
+    <meta name="keywords" content="patent, patents, patent search, patent data, information, information retrieval, intellectual property, research, researcher, researchers, research data, research tool, research and development, epo, ops, dpma, uspto, wipo, patentscope, the lens, open data, opendata, open source, free software">
 
-        <!-- Load whole application -->
+    <!-- Let browser know website is optimized for mobile -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
-        <!-- Development -->
-        <script type="text/javascript" src="./static/assets/commons.bundle.js"></script>
-        <script type="text/javascript" src="./static/assets/app.bundle.js"></script>
+    <!-- Load whole application -->
 
-        <!-- Production -->
-        <!--
-        <script type="text/javascript" src="./static/assets/commons.bundle.min.js"></script>
-        <script type="text/javascript" src="./static/assets/app.bundle.min.js"></script>
-        -->
+    <!-- Development -->
+    <script type="text/javascript" src="./static/assets/commons.bundle.js"></script>
+    <script type="text/javascript" src="./static/assets/app.bundle.js"></script>
 
-    </head>
+    <!-- Production -->
+    <!--
+    <script type="text/javascript" src="./static/assets/commons.bundle.min.js"></script>
+    <script type="text/javascript" src="./static/assets/app.bundle.min.js"></script>
+    -->
 
-    <body>
+</head>
 
-        <a class="github-fork-ribbon" href="https://github.com/ip-tools/www.ip-tools.org" target="_blank" title="Fork me on GitHub">Fork me on GitHub</a>
+<body>
 
-        <div class="container">
+    <a class="github-fork-ribbon" href="https://github.com/ip-tools/www.ip-tools.org" target="_blank" title="Fork me on GitHub">Fork me on GitHub</a>
 
-            <div class="card-panel">
-                <h4>IP Tools</h4>
-                <p class="flow-text">
-                    We are developing innovative patent data processing software
-                    based on modern components and technologies.
-                    Open source and a friendly community.
-                </p>
+    <div class="container">
+
+        <div class="card-panel">
+            <h4>IP Tools</h4>
+            <p class="flow-text">
+                We are developing innovative patent information software
+                based on modern components and technologies.
+                Open source and a friendly community.
+            </p>
+        </div>
+
+        <div class="card-panel">
+            <h5>A curated list of software modules, applications and resources</h5>
+            <p>
+                Open source software projects live from collaboration, contribution and participation. You are welcome to join our efforts.
+            </p>
+            <p>
+                If you feel your project is missing here or when you have other suggestions,
+                please drop us a line at <a href="mailto:feedback@ip-tools.org">feedback@ip-tools.org</a>
+                or send a pull request.
+            </p>
+        </div>
+
+
+        <div class="row">
+
+            <!-- Navigation -->
+            <div class="col s12">
+                <ul class="tabs">
+                    <li class="tab col s4"><a href="#modules">Modules</a></li>
+                    <li class="tab col s4"><a href="#applications">Applications</a></li>
+                    <li class="tab col s4"><a href="#resources">Resources</a></li>
+                </ul>
             </div>
 
-            <div class="card-panel">
-                <h5>A curated list of software components</h5>
-                <p>
-                    Open source software projects live from participation and collaboration. You are welcome to join our efforts.
-                </p>
-                <p>
-                    If you feel your project is missing here or when you have other suggestions,
-                    please drop us a line at <a href="mailto:feedback@ip-tools.org">feedback@ip-tools.org</a>
-                    or send a pull request.
-                </p>
-            </div>
+            <div id="modules">
 
-
-            <div class="row">
-
-            <!-- PatZilla -->
-            <div class="col s12 m12 l6">
-                <div class="card artefact z-depth-3 hoverable sticky-action">
-                    <div class="card-image align-center">
-                        <img src="./static/img/tooling-screwdriver.png" class="circle responsive-img" style="width: 75%; left: 12%; top: 12%">
-                    </div>
-                    <div class="card-content">
-                        <span class="card-title activator">PatZilla IP Navigator<i class="material-icons right">more_vert</i></span>
-                        <p>
-                            PatZilla is a modular patent information research platform and toolkit
-                            with a modern user interface.
-
-                            It provides convenient and efficient access to a number of professional patent search APIs.
-                        </p>
-                        <div class="author">
-                            Author: <a href="https://github.com/amotl" target="_blank">Andreas Motl</a>
-                        </div>
-                    </div>
-                    <div class="card-reveal">
-                        <span class="card-title grey-text text-darken-4">PatZilla IP Navigator<i class="material-icons right">close</i></span>
-                        <p>
-                            PatZilla is a modular patent information research platform and toolkit
-                            with a modern user interface.
-
-                            It provides convenient and efficient access to a number of professional patent search APIs.
-                        </p>
-
-                        <p>
-                            Currently, it implements access to:
-                        <ul class="browser-default">
-                            <li>
-                                <a href="https://ops.epo.org/" target="_blank">EPO Open Patent Services (OPS)</a>
-                            </li>
-                            <li>
-                                <a href="https://depatisnet.dpma.de" target="_blank">DPMA DEPATISnet</a>
-                            </li>
-                            <li>
-                                <a href="https://www.ificlaims.com/" target="_blank">IFI CLAIMS® Direct</a>
-                            </li>
-                            <li>
-                                <a href="https://depa.tech/" target="_blank">MTC depa.tech</a>
-                            </li>
-                        </ul>
-                        </p>
-
-                        <p>
-                            Under the hood, it uses contemporary software components and technologies:
-                        <ul class="browser-default">
-                            <li>
-                                <a href="http://nginx.org/" target="_blank">Nginx</a>
-                            </li>
-                            <li>
-                                <a href="https://uwsgi-docs.readthedocs.io/" target="_blank">uWSGI</a>
-                            </li>
-                            <li>
-                                <a href="https://www.mongodb.com/" target="_blank">MongoDB</a>
-                            </li>
-                            <li>
-                                <a href="https://www.python.org/" target="_blank">Python</a>
-                            </li>
-                            <li>
-                                <a href="https://trypyramid.com/" target="_blank">Pyramid</a>
-                            </li>
-                            <li>
-                                <a href="https://celery.readthedocs.io/" target="_blank">Celery</a>
-                            </li>
-                            <li>
-                                <a href="http://backbonejs.org/" target="_blank">Backbone.js</a>
-                            </li>
-                            <li>
-                                <a href="https://marionettejs.com/" target="_blank">Marionette.js</a>
-                            </li>
-                            <li>
-                                ... and some more.
-                            </li>
-                        </ul>
-                        </p>
-                    </div>
-                    <div class="card-action">
-                        <div class="row no-margin">
-                            <a class="col s3 push-s0 blue-grey-text text-darken-2 waves-effect waves-light btn blue-grey lighten-4" href="https://github.com/ip-tools/ip-navigator">GitHub</a>
-                            <a class="col s2 push-s1 blue-grey-text text-darken-2 waves-effect waves-light btn blue-grey lighten-4" href="https://pypi.org/project/patzilla/">PyPI</a>
-                            <a class="col s2 push-s2 blue-grey-text text-darken-2 waves-effect waves-light btn blue-grey lighten-4" href="https://docs.ip-tools.org/ip-navigator/">Docs</a>
-                            <a class="col s2 push-s3 blue-grey-text text-darken-2 waves-effect waves-light btn blue-grey lighten-4" href="https://patentview.ip-tools.io/?op=eyJhbGciOiAiUlMyNTYiLCAidHlwIjogIkpXVCJ9.eyJqdGkiOiAiZDZUT3Ewc3NkRDB6TTVCSGdhOEJrQT09IiwgImRhdGEiOiB7InByb2plY3QiOiAicXVlcnktcGVybWFsaW5rIiwgInF1ZXJ5IjogInR4dD0oU1M3IG9yICh0ZWxlY29tbXVuaWNhdGlvbiBvciBjb21tdW5pY2F0aW9uIG9yIGNvbXVuaWNhY2lcdTAwZjNuKSBvciAobW9iaWxlIG9yIE1vYmlsZnVua25ldHopIG9yIChuZXR3b3JrIG9yIChzZWN1cml0eSBvciBTaWNoZXJ1bmcpKSkgYW5kIHBhPShtb2JpbCBvciBrb21tdW5pa2F0aW9uKSBhbmQgY2w9KEgwNFcxMi8xMiBvciBIMDRMNjMvMDI4MSBvciBIMDRMNjMvMDQxNCkgbm90IHBuPShDTiBvciBDQSBvciBKUCkiLCAibW9kZSI6ICJsaXZldmlldyIsICJjb250ZXh0IjogInZpZXdlciIsICJkYXRhc291cmNlIjogIm9wcyJ9LCAibmJmIjogMTUwNzgyNjYxNywgImV4cCI6IDE2NjMzNDY2MTcsICJpYXQiOiAxNTA3ODI2NjE3fQ.fCl7I5wPd0r48O48UkVQxzw9QOy5PjFaFecmAoYisbM-Her9Z6R0E2hxc82TSdH68gz379jQe5v9eF6g620aG4odTOXtdhyoDrWcb-GJcfR-0BfpiqPRwzLng53ape69">Demo</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Patent2Net -->
-            <div class="col s12 m12 l6">
-                <div class="card artefact z-depth-3 hoverable sticky-action">
-                    <div class="card-image">
-                        <img src="./static/img/patent2net-logo.jpg" class="circle responsive-img" style="width: 50%; left: 25%; top: 25%">
-                    </div>
-                    <div class="card-content">
-                        <span class="card-title activator">Patent2Net<i class="material-icons right">more_vert</i></span>
-                        <p>
-                            Patent2Net helps to collect, study and analyze patent data from the
-                            European Patent Office's Open Patent Services API (OPS).
-                        </p>
-                        <div class="author">
-                            Authors: <a href="http://patent2netv2.vlab4u.info/dokuwiki/doku.php?id=about_p2n:community" target="_blank">Team of university professors and researchers</a>
-                        </div>
-                    </div>
-                    <div class="card-reveal">
-                        <span class="card-title grey-text text-darken-4">Patent2Net<i class="material-icons right">close</i></span>
-                        <p>
-                            Patent2Net is free software, dedicated to ...
-
-                        <ul class="browser-default">
-                            <li>
-                                promote the use of patent information in the academic field, nano and small firms,
-                                developing countries and all those without pay mode access.
-                            </li>
-                            <li>
-                                study and practice how to collect, treat and communicate
-                                "textual bibliographic information" and learn the automation process.
-                            </li>
-                            <li>
-                                provide statistical analysis and representations of a set of patents.
-                            </li>
-                        </ul>
-
-                        Patent2Net is maintained by a
-                        <a href="http://patent2netv2.vlab4u.info/dokuwiki/doku.php?id=about_p2n:community">
-                            small international team
-                        </a>
-                        of university professors and researchers on a free basis. Contributions are welcome.
-                        <br/><br/>
-
-                        Currently, it implements access to:
-                        <ul class="browser-default">
-                            <li>
-                                <a href="https://ops.epo.org/" target="_blank">EPO OPS</a>
-                            </li>
-                        </ul>
-                        </p>
-
-                        <p>
-                            Under the hood, these fine pieces are the main workhorses:
-                        <ul class="browser-default">
-                            <li>
-                                <a href="https://www.python.org/" target="_blank">Python</a>
-                            </li>
-                            <li>
-                                <a href="http://pandas.pydata.org/" target="_blank">pandas</a>
-                            </li>
-                            <li>
-                                <a href="http://www.numpy.org/" target="_blank">NumPy</a>
-                            </li>
-                            <li>
-                                <a href="http://www.nltk.org/" target="_blank">NLTK</a>
-                            </li>
-                            <li>
-                                <a href="http://scikit-learn.org/" target="_blank">scikit-learn</a>
-                            </li>
-                            <li>
-                                <a href="https://matplotlib.org/" target="_blank">Matplotlib</a>
-                            </li>
-                            <li>
-                                <a href="http://www.graphviz.org/" target="_blank">Graphviz</a>
-                            </li>
-                            <li>
-                                <a href="http://www.gephi.org/" target="_blank">Gephi</a>
-                            </li>
-                            <li>
-                                <a href="https://networkx.github.io/" target="_blank">NetworkX</a>
-                            </li>
-                            <li>
-                                <a href="https://d3js.org/" target="_blank">D3.js</a>
-                            </li>
-                            <li>
-                                <a href="http://www.datatables.net/" target="_blank">DataTables</a>
-                            </li>
-                            <li>
-                                <a href="https://pivottable.js.org/" target="_blank">PivotTable</a>
-                            </li>
-                            <li>
-                                ... and some more.
-                                The software also integrates with other programs, see
-                                <a href="http://patent2netv2.vlab4u.info/dokuwiki/doku.php?id=about_p2n:software">Patent2Net: Third party software</a>.
-                            </li>
-                        </ul>
-                        </p>
-
-                    </div>
-                    <div class="card-action">
-                        <div class="row no-margin">
-                            <a class="col s3 push-s0 blue-grey-text text-darken-2 waves-effect waves-light btn blue-grey lighten-4" href="https://github.com/Patent2net/P2N">GitHub</a>
-                            <a class="col s5 push-s4 blue-grey-text text-darken-2 waves-effect waves-light btn blue-grey lighten-4" href="http://patent2netv2.vlab4u.info/dokuwiki/">Documentation</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- python-epo-ops-client -->
+                <!-- python-epo-ops-client -->
                 <div class="col s12 m12 l6">
                     <div class="card artefact z-depth-3 hoverable sticky-action">
                         <div class="card-image">
@@ -279,26 +98,25 @@
 
                             <h5>Synopsis</h5>
                             <div class="codehilite">
-                                <div class="syntax"><pre><span></span><span class="kn">import</span> <span class="nn">epo_ops</span>
-
-<span class="c1"># Instantiate client</span>
+                                <div class="syntax"><pre><span></span><span class="c1"># Instantiate client</span>
+<span class="kn">import</span> <span class="nn">epo_ops</span>
 <span class="n">client</span> <span class="o">=</span> <span class="n">epo_ops</span><span class="o">.</span><span class="n">Client</span><span class="p">(</span><span class="n">key</span><span class="o">=</span><span class="s1">'abc'</span><span class="p">,</span> <span class="n">secret</span><span class="o">=</span><span class="s1">'xyz'</span><span class="p">)</span>
 
 <span class="c1"># Retrieve bibliography data</span>
 <span class="n">response</span> <span class="o">=</span> <span class="n">client</span><span class="o">.</span><span class="n">published_data</span><span class="p">(</span>
 
-  <span class="c1"># publication, application, priority</span>
-  <span class="n">reference_type</span> <span class="o">=</span> <span class="s1">'publication'</span><span class="p">,</span>
+    <span class="c1"># publication, application, priority</span>
+    <span class="n">reference_type</span> <span class="o">=</span> <span class="s1">'publication'</span><span class="p">,</span>
 
-  <span class="c1"># original, docdb, epodoc</span>
-  <span class="nb">input</span> <span class="o">=</span> <span class="n">epo_ops</span><span class="o">.</span><span class="n">models</span><span class="o">.</span><span class="n">Docdb</span><span class="p">(</span><span class="s1">'1000000'</span><span class="p">,</span> <span class="s1">'EP'</span><span class="p">,</span> <span class="s1">'A1'</span><span class="p">),</span>
+    <span class="c1"># original, docdb, epodoc</span>
+    <span class="nb">input</span> <span class="o">=</span> <span class="n">epo_ops</span><span class="o">.</span><span class="n">models</span><span class="o">.</span><span class="n">Docdb</span><span class="p">(</span><span class="s1">'1000000'</span><span class="p">,</span> <span class="s1">'EP'</span><span class="p">,</span> <span class="s1">'A1'</span><span class="p">),</span>
 
-  <span class="c1"># optional, defaults to "biblio"</span>
-  <span class="c1"># in case of published_data</span>
-  <span class="n">endpoint</span> <span class="o">=</span> <span class="s1">'biblio'</span><span class="p">,</span>
+    <span class="c1"># optional, defaults to "biblio"</span>
+    <span class="c1"># in case of published_data</span>
+    <span class="n">endpoint</span> <span class="o">=</span> <span class="s1">'biblio'</span><span class="p">,</span>
 
-  <span class="c1"># optional, list of constituents</span>
-  <span class="n">constituents</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="c1"># optional, list of constituents</span>
+    <span class="n">constituents</span> <span class="o">=</span> <span class="p">[]</span>
 <span class="p">)</span>
 </pre></div>
                             </div>
@@ -358,11 +176,11 @@
 <span class="c1"># Acquire single document in JSON and XML formats</span>
 <span class="n">result</span> <span class="o">=</span> <span class="n">client</span><span class="o">.</span><span class="n">download_document</span><span class="p">(</span><span class="s1">'PP28532'</span><span class="p">)</span>
 </pre></div>
-                            </div>
+                        </div>
 
-                            <h5>Command line usage</h5>
-                            <div class="codehilite">
-                                <div class="syntax"><pre><span></span><span class="c1"># Fetch document by US application publication</span>
+                        <h5>Command line usage</h5>
+                        <div class="codehilite">
+                            <div class="syntax"><pre><span></span><span class="c1"># Fetch document by US application publication</span>
 <span class="c1"># number and pretty-print JSON result</span>
 uspto-pbd get <span class="s2">"2017/0293197"</span> <span class="se">\</span>
     --type<span class="o">=</span>publication --format<span class="o">=</span>json --pretty
@@ -422,7 +240,8 @@ ops_count<span class="p">(</span><span class="s">"drones"</span><span class="p">
 
 <span class="c1"># Submit query and return result as data.frame</span>
 drones <span class="o">&lt;-</span> ops_fetch_biblio<span class="p">(</span>
-    query <span class="o">=</span> <span class="s">"drones"</span><span class="p">,</span> type <span class="o">=</span> <span class="s">"ta"</span><span class="p">,</span> service <span class="o">=</span> <span class="s">"biblio"</span><span class="p">,</span>
+    query <span class="o">=</span> <span class="s">"drones"</span><span class="p">,</span> type <span class="o">=</span> <span class="s">"ta"</span><span class="p">,</span>
+    service <span class="o">=</span> <span class="s">"biblio"</span><span class="p">,</span>
     start <span class="o">=</span> <span class="m">1990</span><span class="p">,</span> end <span class="o">=</span> <span class="m">2015</span><span class="p">,</span> timer <span class="o">=</span> <span class="m">10</span><span class="p">)</span>
 </pre></div>
                             </div>
@@ -496,13 +315,218 @@ drones <span class="o">&lt;-</span> lens_search<span class="p">(</span>
 
             </div>
 
+            <div id="applications">
+
+                <!-- Patent2Net -->
+                <div class="col s12 m12 l6">
+                    <div class="card artefact z-depth-3 hoverable sticky-action">
+                        <div class="card-image">
+                            <img src="./static/img/patent2net-logo.jpg" class="circle responsive-img" style="width: 50%; left: 25%; top: 25%">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title activator">Patent2Net<i class="material-icons right">more_vert</i></span>
+                            <p>
+                                Patent2Net helps to collect, study and analyze patent data from the
+                                European Patent Office's Open Patent Services API (OPS).
+                            </p>
+                            <div class="author">
+                                Authors: <a href="http://patent2netv2.vlab4u.info/dokuwiki/doku.php?id=about_p2n:community" target="_blank">A team of university professors and researchers</a>
+                            </div>
+                        </div>
+                        <div class="card-reveal">
+                            <span class="card-title grey-text text-darken-4">Patent2Net<i class="material-icons right">close</i></span>
+                            <p>
+                                Patent2Net is free software, dedicated to ...
+
+                            <ul class="browser-default">
+                                <li>
+                                    promote the use of patent information in the academic field, nano and small firms,
+                                    developing countries and all those without pay mode access.
+                                </li>
+                                <li>
+                                    study and practice how to collect, treat and communicate
+                                    "textual bibliographic information" and learn the automation process.
+                                </li>
+                                <li>
+                                    provide statistical analysis and representations of a set of patents.
+                                </li>
+                            </ul>
+
+                            Patent2Net is maintained by an
+                            <a href="http://patent2netv2.vlab4u.info/dokuwiki/doku.php?id=about_p2n:community">
+                                international team of university professors and researchers
+                            </a>
+                            on a free basis. Contributions are welcome.
+                            <br/><br/>
+
+                            Currently, it implements access to:
+                            <ul class="browser-default">
+                                <li>
+                                    <a href="https://ops.epo.org/" target="_blank">EPO OPS</a>
+                                </li>
+                            </ul>
+                            </p>
+
+                            <p>
+                                Under the hood, these fine pieces are the main workhorses:
+                            <ul class="browser-default">
+                                <li>
+                                    <a href="https://www.python.org/" target="_blank">Python</a>
+                                </li>
+                                <li>
+                                    <a href="http://pandas.pydata.org/" target="_blank">pandas</a>
+                                </li>
+                                <li>
+                                    <a href="http://www.numpy.org/" target="_blank">NumPy</a>
+                                </li>
+                                <li>
+                                    <a href="http://www.nltk.org/" target="_blank">NLTK</a>
+                                </li>
+                                <li>
+                                    <a href="http://scikit-learn.org/" target="_blank">scikit-learn</a>
+                                </li>
+                                <li>
+                                    <a href="https://matplotlib.org/" target="_blank">Matplotlib</a>
+                                </li>
+                                <li>
+                                    <a href="http://www.graphviz.org/" target="_blank">Graphviz</a>
+                                </li>
+                                <li>
+                                    <a href="http://www.gephi.org/" target="_blank">Gephi</a>
+                                </li>
+                                <li>
+                                    <a href="https://networkx.github.io/" target="_blank">NetworkX</a>
+                                </li>
+                                <li>
+                                    <a href="https://d3js.org/" target="_blank">D3.js</a>
+                                </li>
+                                <li>
+                                    <a href="http://www.datatables.net/" target="_blank">DataTables</a>
+                                </li>
+                                <li>
+                                    <a href="https://pivottable.js.org/" target="_blank">PivotTable</a>
+                                </li>
+                                <li>
+                                    ... and some more.
+                                    The software also integrates with other programs, see
+                                    <a href="http://patent2netv2.vlab4u.info/dokuwiki/doku.php?id=about_p2n:software">Patent2Net: Third party software</a>.
+                                </li>
+                            </ul>
+                            </p>
+
+                        </div>
+                        <div class="card-action">
+                            <div class="row no-margin">
+                                <a class="col s3 push-s0 blue-grey-text text-darken-2 waves-effect waves-light btn blue-grey lighten-4" href="https://github.com/Patent2net/P2N">GitHub</a>
+                                <a class="col s5 push-s4 blue-grey-text text-darken-2 waves-effect waves-light btn blue-grey lighten-4" href="http://patent2netv2.vlab4u.info/dokuwiki/">Documentation</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- PatZilla -->
+                <div class="col s12 m12 l6">
+                    <div class="card artefact z-depth-3 hoverable sticky-action">
+                        <div class="card-image align-center">
+                            <img src="./static/img/tooling-screwdriver.png" class="circle responsive-img" style="width: 75%; left: 12%; top: 12%">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title activator">PatZilla IP Navigator<i class="material-icons right">more_vert</i></span>
+                            <p>
+                                PatZilla is a modular patent information research platform and toolkit
+                                with a modern user interface.
+
+                                It provides convenient and efficient access to a number of professional patent search APIs.
+                            </p>
+                            <div class="author">
+                                Author: <a href="https://github.com/amotl" target="_blank">Andreas Motl</a>
+                            </div>
+                        </div>
+                        <div class="card-reveal">
+                            <span class="card-title grey-text text-darken-4">PatZilla IP Navigator<i class="material-icons right">close</i></span>
+                            <p>
+                                PatZilla is a modular patent information research platform and toolkit
+                                with a modern user interface.
+
+                                It provides convenient and efficient access to a number of professional patent search APIs.
+                            </p>
+
+                            <p>
+                                Currently, it implements access to:
+                            <ul class="browser-default">
+                                <li>
+                                    <a href="https://ops.epo.org/" target="_blank">EPO Open Patent Services (OPS)</a>
+                                </li>
+                                <li>
+                                    <a href="https://depatisnet.dpma.de" target="_blank">DPMA DEPATISnet</a>
+                                </li>
+                                <li>
+                                    <a href="https://www.ificlaims.com/" target="_blank">IFI CLAIMS® Direct</a>
+                                </li>
+                                <li>
+                                    <a href="https://depa.tech/" target="_blank">MTC depa.tech</a>
+                                </li>
+                            </ul>
+                            </p>
+
+                            <p>
+                                Under the hood, it uses contemporary software components and technologies:
+                            <ul class="browser-default">
+                                <li>
+                                    <a href="http://nginx.org/" target="_blank">Nginx</a>
+                                </li>
+                                <li>
+                                    <a href="https://uwsgi-docs.readthedocs.io/" target="_blank">uWSGI</a>
+                                </li>
+                                <li>
+                                    <a href="https://www.mongodb.com/" target="_blank">MongoDB</a>
+                                </li>
+                                <li>
+                                    <a href="https://www.python.org/" target="_blank">Python</a>
+                                </li>
+                                <li>
+                                    <a href="https://trypyramid.com/" target="_blank">Pyramid</a>
+                                </li>
+                                <li>
+                                    <a href="https://celery.readthedocs.io/" target="_blank">Celery</a>
+                                </li>
+                                <li>
+                                    <a href="http://backbonejs.org/" target="_blank">Backbone.js</a>
+                                </li>
+                                <li>
+                                    <a href="https://marionettejs.com/" target="_blank">Marionette.js</a>
+                                </li>
+                                <li>
+                                    ... and some more.
+                                </li>
+                            </ul>
+                            </p>
+                        </div>
+                        <div class="card-action">
+                            <div class="row no-margin">
+                                <a class="col s3 push-s0 blue-grey-text text-darken-2 waves-effect waves-light btn blue-grey lighten-4" href="https://github.com/ip-tools/ip-navigator">GitHub</a>
+                                <a class="col s2 push-s1 blue-grey-text text-darken-2 waves-effect waves-light btn blue-grey lighten-4" href="https://pypi.org/project/patzilla/">PyPI</a>
+                                <a class="col s2 push-s2 blue-grey-text text-darken-2 waves-effect waves-light btn blue-grey lighten-4" href="https://docs.ip-tools.org/ip-navigator/">Docs</a>
+                                <a class="col s2 push-s3 blue-grey-text text-darken-2 waves-effect waves-light btn blue-grey lighten-4" href="https://patentview.ip-tools.io/?op=eyJhbGciOiAiUlMyNTYiLCAidHlwIjogIkpXVCJ9.eyJqdGkiOiAiZDZUT3Ewc3NkRDB6TTVCSGdhOEJrQT09IiwgImRhdGEiOiB7InByb2plY3QiOiAicXVlcnktcGVybWFsaW5rIiwgInF1ZXJ5IjogInR4dD0oU1M3IG9yICh0ZWxlY29tbXVuaWNhdGlvbiBvciBjb21tdW5pY2F0aW9uIG9yIGNvbXVuaWNhY2lcdTAwZjNuKSBvciAobW9iaWxlIG9yIE1vYmlsZnVua25ldHopIG9yIChuZXR3b3JrIG9yIChzZWN1cml0eSBvciBTaWNoZXJ1bmcpKSkgYW5kIHBhPShtb2JpbCBvciBrb21tdW5pa2F0aW9uKSBhbmQgY2w9KEgwNFcxMi8xMiBvciBIMDRMNjMvMDI4MSBvciBIMDRMNjMvMDQxNCkgbm90IHBuPShDTiBvciBDQSBvciBKUCkiLCAibW9kZSI6ICJsaXZldmlldyIsICJjb250ZXh0IjogInZpZXdlciIsICJkYXRhc291cmNlIjogIm9wcyJ9LCAibmJmIjogMTUwNzgyNjYxNywgImV4cCI6IDE2NjMzNDY2MTcsICJpYXQiOiAxNTA3ODI2NjE3fQ.fCl7I5wPd0r48O48UkVQxzw9QOy5PjFaFecmAoYisbM-Her9Z6R0E2hxc82TSdH68gz379jQe5v9eF6g620aG4odTOXtdhyoDrWcb-GJcfR-0BfpiqPRwzLng53ape69">Demo</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
         </div>
 
-    </body>
         <div class="card-panel footer">
             The copyright and trademarks of particular images, pictograms and brand names are held by their respective owners, unless otherwise noted.
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             Revision <span id="version"></span>
         </div>
+
+    </div>
+
+</body>
 
 </html>
