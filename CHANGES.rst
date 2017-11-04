@@ -6,6 +6,7 @@ www.ip-tools.org CHANGES
 next release
 ------------
 - Add USPTO TSDR client "Plumage"
+- Add R package for accessing PatentsView
 
 2017-11-04 0.4.0
 ----------------

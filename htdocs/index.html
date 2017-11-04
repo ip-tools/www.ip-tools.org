@@ -385,6 +385,60 @@ uspto-pbd get <span class="s2">"2017/0293197"</span> <span class="se">\</span>
                 </div>
 
 
+                <!-- patentsview -->
+                <div class="col s12 m12 l6">
+                    <div class="card artefact z-depth-3 hoverable sticky-action">
+                        <div class="card-image align-center">
+                            <img src="./static/img/patentsview-logo.jpg" class="responsive-img" style="width: 60%; left: 20%; top: 50%">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title activator">R package to access PatentsView<i class="material-icons right">more_vert</i></span>
+                            <p>
+                                An R client to obtain data from the PatentsView API.
+                            </p>
+                            <div class="author">
+                                Author: <a href="https://github.com/crew102" target="_blank">Chris Baker</a>
+                            </div>
+                        </div>
+                        <div class="card-reveal">
+                            <span class="card-title grey-text text-darken-4">R package to access PatentsView<i class="material-icons right">close</i></span>
+                            <p>
+                                An R client to obtain data from the PatentsView API.
+                                <br/><br/>
+
+                                Currently, it implements access to:
+                            <ul class="browser-default">
+                                <li>
+                                    <a href="http://www.patentsview.org/api/" target="_blank">PatentsView API</a>
+                                </li>
+                            </ul>
+                            </p>
+
+                            <h5>Synopsis</h5>
+                            <div class="codehilite">
+                                <div class="syntax"><pre><span></span><span class="c1"># Install package</span>
+devtools<span class="o">::</span>install_github<span class="p">(</span><span class="s">"ropensci/patentsview"</span><span class="p">)</span>
+
+<span class="c1"># Load library</span>
+<span class="kn">library</span><span class="p">(</span>patentsview<span class="p">)</span>
+
+<span class="c1"># Perform search</span>
+search_pv<span class="p">(
+    </span>query <span class="o">=</span> <span class="s">'{"_gte":{"patent_date":"2007-01-01"}}'</span><span class="p">)</span>
+</pre></div>
+                            </div>
+
+                        </div>
+                        <div class="card-action">
+                            <div class="row no-margin">
+                                <a class="col s3 push-s0 blue-grey-text text-darken-2 waves-effect waves-light btn blue-grey lighten-4" href="https://github.com/ropensci/patentsview">GitHub</a>
+                                <a class="col s5 push-s4 blue-grey-text text-darken-2 waves-effect waves-light btn blue-grey lighten-4" href="https://ropensci.github.io/patentsview/">Documentation</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
                 <!-- patentscope gem -->
                 <div class="col s12 m12 l6">
                     <div class="card artefact z-depth-3 hoverable sticky-action">
@@ -446,6 +500,7 @@ uspto-pbd get <span class="s2">"2017/0293197"</span> <span class="se">\</span>
                     </div>
                 </div>
 
+
                 <!-- lensr -->
                 <div class="col s12 m12 l6">
                     <div class="card artefact z-depth-3 hoverable sticky-action">
@@ -504,6 +559,7 @@ drones <span class="o">&lt;-</span> lens_search<span class="p">(</span>
                 </div>
 
             </div>
+
 
             <div id="applications">
 
