@@ -132,6 +132,66 @@
                     </div>
                 </div>
 
+
+                <!-- opsrdev -->
+                <div class="col s12 m12 l6">
+                    <div class="card artefact z-depth-3 hoverable sticky-action">
+                        <div class="card-image">
+                            <img src="./static/img/epo-logo-small.svg" class="circle responsive-img" style="width: 40%; left: 30%; top: 30%">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title activator">R package to access OPS<i class="material-icons right">more_vert</i></span>
+                            <p>
+                                R package to access the European Patent Office Open Patent Services API (OPS).
+                            </p>
+                            <div class="author">
+                                Author: <a href="https://poldham.github.io/" target="_blank">Paul Oldham</a>
+                            </div>
+                        </div>
+                        <div class="card-reveal">
+                            <span class="card-title grey-text text-darken-4">R package to access OPS<i class="material-icons right">close</i></span>
+                            <p>
+                                R package to access the European Patent Office Open Patent Services API (OPS).
+                                <br/><br/>
+
+                                Currently, it implements access to:
+                            <ul class="browser-default">
+                                <li>
+                                    <a href="https://ops.epo.org/" target="_blank">EPO OPS</a>
+                                </li>
+                            </ul>
+                            </p>
+
+                            <h5>Synopsis</h5>
+                            <div class="codehilite">
+                                <div class="syntax"><pre><span></span><span class="c1"># Install package</span>
+devtools<span class="o">::</span>install_github<span class="p">(</span><span class="s">"poldham/opsrdev"</span><span class="p">)</span>
+
+<span class="c1"># Load library</span>
+<span class="kn">library</span><span class="p">(</span>opsrdev<span class="p">)</span>
+
+<span class="c1"># Get count for patent biblios (front pages)</span>
+ops_count<span class="p">(</span><span class="s">"drones"</span><span class="p">,</span> <span class="s">"ta"</span><span class="p">,</span> start <span class="o">=</span> <span class="m">1990</span><span class="p">,</span> end <span class="o">=</span> <span class="m">2015</span><span class="p">)</span>
+
+<span class="c1"># Submit query and return result as data.frame</span>
+drones <span class="o">&lt;-</span> ops_fetch_biblio<span class="p">(</span>
+    query <span class="o">=</span> <span class="s">"drones"</span><span class="p">,</span> type <span class="o">=</span> <span class="s">"ta"</span><span class="p">,</span>
+    service <span class="o">=</span> <span class="s">"biblio"</span><span class="p">,</span>
+    start <span class="o">=</span> <span class="m">1990</span><span class="p">,</span> end <span class="o">=</span> <span class="m">2015</span><span class="p">,</span> timer <span class="o">=</span> <span class="m">10</span><span class="p">)</span>
+</pre></div>
+                            </div>
+
+                        </div>
+                        <div class="card-action">
+                            <div class="row no-margin">
+                                <a class="col s3 push-s0 blue-grey-text text-darken-2 waves-effect waves-light btn blue-grey lighten-4" href="https://github.com/poldham/opsrdev">GitHub</a>
+                                <a class="col s5 push-s4 blue-grey-text text-darken-2 waves-effect waves-light btn blue-grey lighten-4" href="https://github.com/poldham/opsrdev/blob/master/README.Rmd">Documentation</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
                 <!-- uspto-opendata-python -->
                 <div class="col s12 m12 l6">
                     <div class="card artefact z-depth-3 hoverable sticky-action">
@@ -198,59 +258,62 @@ uspto-pbd get <span class="s2">"2017/0293197"</span> <span class="se">\</span>
                     </div>
                 </div>
 
-                <!-- opsrdev -->
+                <!-- patentscope gem -->
                 <div class="col s12 m12 l6">
                     <div class="card artefact z-depth-3 hoverable sticky-action">
-                        <div class="card-image">
-                            <img src="./static/img/epo-logo-small.svg" class="circle responsive-img" style="width: 40%; left: 30%; top: 30%">
+                        <div class="card-image align-center">
+                            <img src="./static/img/wipo-logo.svg" class="circle responsive-img" style="width: 60%; left: 20%; top: 30%">
                         </div>
                         <div class="card-content">
-                            <span class="card-title activator">R package to access OPS<i class="material-icons right">more_vert</i></span>
+                            <span class="card-title activator">WIPO PATENTSCOPE client<i class="material-icons right">more_vert</i></span>
                             <p>
-                                R package to access the European Patent Office Open Patent Services API (OPS).
+                                Gem to allow easy access to data from the WIPO PATENTSCOPE Web Service, written in Ruby.
                             </p>
                             <div class="author">
-                                Author: <a href="https://poldham.github.io/" target="_blank">Paul Oldham</a>
+                                Author: <a href="https://github.com/cykhoo" target="_blank">Chong-Yee Khoo</a>
                             </div>
                         </div>
                         <div class="card-reveal">
-                            <span class="card-title grey-text text-darken-4">R package to access OPS<i class="material-icons right">close</i></span>
+                            <span class="card-title grey-text text-darken-4">WIPO PATENTSCOPE client<i class="material-icons right">close</i></span>
                             <p>
-                                R package to access the European Patent Office Open Patent Services API (OPS).
+                                Gem to allow easy access to data from the WIPO PATENTSCOPE Web Service, written in Ruby.
                                 <br/><br/>
 
                                 Currently, it implements access to:
                             <ul class="browser-default">
                                 <li>
-                                    <a href="https://ops.epo.org/" target="_blank">EPO OPS</a>
+                                    <a href="https://patentscope.wipo.int/" target="_blank">WIPO PATENTSCOPE</a>
                                 </li>
                             </ul>
                             </p>
 
-                            <h5>Synopsis</h5>
-                            <div class="codehilite">
-                                <div class="syntax"><pre><span></span><span class="c1"># Install package</span>
-devtools<span class="o">::</span>install_github<span class="p">(</span><span class="s">"poldham/opsrdev"</span><span class="p">)</span>
-
-<span class="c1"># Load library</span>
-<span class="kn">library</span><span class="p">(</span>opsrdev<span class="p">)</span>
-
-<span class="c1"># Get count for patent biblios (front pages)</span>
-ops_count<span class="p">(</span><span class="s">"drones"</span><span class="p">,</span> <span class="s">"ta"</span><span class="p">,</span> start <span class="o">=</span> <span class="m">1990</span><span class="p">,</span> end <span class="o">=</span> <span class="m">2015</span><span class="p">)</span>
-
-<span class="c1"># Submit query and return result as data.frame</span>
-drones <span class="o">&lt;-</span> ops_fetch_biblio<span class="p">(</span>
-    query <span class="o">=</span> <span class="s">"drones"</span><span class="p">,</span> type <span class="o">=</span> <span class="s">"ta"</span><span class="p">,</span>
-    service <span class="o">=</span> <span class="s">"biblio"</span><span class="p">,</span>
-    start <span class="o">=</span> <span class="m">1990</span><span class="p">,</span> end <span class="o">=</span> <span class="m">2015</span><span class="p">,</span> timer <span class="o">=</span> <span class="m">10</span><span class="p">)</span>
-</pre></div>
-                            </div>
+                            It allows you to get the ...
+                            <ul class="browser-default">
+                                <li>
+                                    International Application Status Report (IASR)
+                                </li>
+                                <li>
+                                    list of available documents by application number
+                                </li>
+                                <li>
+                                    binary content of a document
+                                </li>
+                                <li>
+                                    text of a document in PDF format (high quality OCR)
+                                </li>
+                                <li>
+                                    list of page IDs for a document
+                                </li>
+                                <li>
+                                    binary content for a document and page
+                                </li>
+                            </ul>
 
                         </div>
                         <div class="card-action">
                             <div class="row no-margin">
-                                <a class="col s3 push-s0 blue-grey-text text-darken-2 waves-effect waves-light btn blue-grey lighten-4" href="https://github.com/poldham/opsrdev">GitHub</a>
-                                <a class="col s5 push-s4 blue-grey-text text-darken-2 waves-effect waves-light btn blue-grey lighten-4" href="https://github.com/poldham/opsrdev/blob/master/README.Rmd">Documentation</a>
+                                <a class="col s3 push-s0 blue-grey-text text-darken-2 waves-effect waves-light btn blue-grey lighten-4" href="https://github.com/cantab/patentscope">GitHub</a>
+                                <a class="col s5 push-s4 blue-grey-text text-darken-2 waves-effect waves-light btn blue-grey lighten-4" href="https://github.com/cantab/patentscope/blob/master/README.md">Documentation</a>
                             </div>
                         </div>
                     </div>
