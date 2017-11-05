@@ -62,3 +62,14 @@ i.artefact {
     text-align: center;
     padding: 12px;
 }
+
+.row.section-header {
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
+
+.card-panel.section-header {
+    padding-top: 1px;
+    padding-bottom: 1px;
+    margin-bottom: 0px;
+}

@@ -12,6 +12,6 @@ require('../css/main.css');
 
 require('./version.js');
 $(document).ready(function() {
-    $('tabs').tabs({swipeable: true});
+    //$('#navigation').tabs({swipeable: true});
     $('#version').html(__version__);
 });
