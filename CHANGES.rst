@@ -6,6 +6,10 @@ www.ip-tools.org CHANGES
 next release
 ------------
 
+2017-12-01 0.6.0
+----------------
+- Improve information for Patent2Net
+
 2017-11-05 0.5.0
 ----------------
 - Add USPTO TSDR client "Plumage"
