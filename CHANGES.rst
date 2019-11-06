@@ -6,6 +6,7 @@ www.ip-tools.org CHANGES
 next release
 ------------
 - Improve layout by applying flexbox adjustments
+- Swap order of modules vs. applications
 
 2017-12-01 0.6.0
 ----------------
