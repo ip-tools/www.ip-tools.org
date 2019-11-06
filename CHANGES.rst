@@ -5,6 +5,9 @@ www.ip-tools.org CHANGES
 
 next release
 ------------
+
+2019-11-06 0.7.0
+----------------
 - Improve layout by applying flexbox adjustments
 - Swap order of modules vs. applications
 - Add the "phpIP" to the list of applications
