@@ -7,6 +7,7 @@ next release
 ------------
 - Improve layout by applying flexbox adjustments
 - Swap order of modules vs. applications
+- Add the "phpIP" to the list of applications
 
 2017-12-01 0.6.0
 ----------------

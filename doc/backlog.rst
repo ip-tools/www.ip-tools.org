@@ -12,6 +12,3 @@ Add
 - https://github.com/IPStreet/PythonSDK
 - https://pypi.python.org/pypi/patentdata
 - https://pypi.python.org/pypi/patentmodels
-- | https://github.com/jjdejong/phpip
-  | https://github.com/jjdejong/phpip-v2
-  | http://www.omnipat.fr/management-team/jean-jacques-de-jong/?lang=en
