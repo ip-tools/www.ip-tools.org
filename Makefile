@@ -5,27 +5,47 @@ webserver:
 	cd htdocs; python -m SimpleHTTPServer 8001; cd ..
 
 
-# ===========
-# bumpversion
-# ===========
+# ============
+# Main targets
+# ============
 
-$(eval venvpath     := .venv27)
+
+# -------------
+# Configuration
+# -------------
+
+$(eval venvpath     := .venv_util)
+$(eval pip          := $(venvpath)/bin/pip)
+$(eval python       := $(venvpath)/bin/python)
+$(eval pytest       := $(venvpath)/bin/pytest)
 $(eval bumpversion  := $(venvpath)/bin/bumpversion)
+$(eval twine        := $(venvpath)/bin/twine)
+$(eval sphinx       := $(venvpath)/bin/sphinx-build)
 
-virtualenv:
-	@test -e $(venvpath)/bin/python || `command -v virtualenv` --python=`command -v python` --no-site-packages $(venvpath)
-
-bumpversion: virtualenv
-	@$(venvpath)/bin/pip install bumpversion
-	$(bumpversion) $(bump)
+# Setup Python virtualenv
+setup-virtualenv:
+	@test -e $(python) || `command -v virtualenv` --python=python3 --no-site-packages $(venvpath)
 
 
-# =======
-# release
-# =======
+
+# -------
+# Release
+# -------
+
+# Release this piece of software
+# Synopsis:
+#   make release bump=minor  (major,minor,patch)
+release: bumpversion push
+
+
+# ===============
+# Utility targets
+# ===============
+bumpversion: install-releasetools
+	@$(bumpversion) $(bump)
 
 push:
 	git push && git push --tags
 
-
-release: bumpversion push
+install-releasetools: setup-virtualenv
+	@$(pip) install --quiet --requirement requirements-release.txt --upgrade

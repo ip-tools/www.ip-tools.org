@@ -5,6 +5,7 @@ www.ip-tools.org CHANGES
 
 next release
 ------------
+- Update release tooling
 
 2019-11-06 0.7.0
 ----------------
