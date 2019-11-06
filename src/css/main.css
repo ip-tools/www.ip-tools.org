@@ -4,27 +4,32 @@ body {
     background-size: 3px 3px;
 }
 
-.row .no-margin {
-    margin-bottom: inherit;
-}
+
+/* Main elements */
 
 i.artefact {
     font-size: 18rem;
 }
 
 .card.artefact {
-    height: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 750px;
 }
 
-.card.artefact > .card-image {
-    height: 65%;
+
+/* Card content */
+.card.artefact .card-image {
+    height: 500px;
 }
 
 .card.artefact .card-content {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 180px;
+    flex-grow: 1;
+    padding-bottom: 5px;
 }
 
 .card.resource .card-content {
@@ -33,11 +38,38 @@ i.artefact {
     justify-content: space-between;
 }
 
+
+/* Sections of content */
+.card-content > .short-description {
+    align-self: flex-start;
+    flex-grow: 1;
+}
+
 .card-content > .author {
     align-self: flex-end;
     text-align: right;
 }
 
+.card.artefact .card-action {
+    align-content: flex-end;
+}
+
+.card-action .row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.card-action > .row.no-margin {
+    margin: inherit;
+}
+
+.card-action > .row.no-margin > * {
+    margin: auto;
+}
+
+
+/* Layout */
 
 .align-center {
     text-align: center;
@@ -45,11 +77,6 @@ i.artefact {
 
 .align-right {
     text-align: right;
-}
-
-.github-fork-ribbon {
-    -webkit-box-sizing: content-box !important;
-    box-sizing: content-box !important;
 }
 
 .tabs .tab a {
@@ -72,4 +99,17 @@ i.artefact {
     padding-top: 1px;
     padding-bottom: 1px;
     margin-bottom: 0px;
+}
+
+.btn-narrow {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+
+/* Decoration elements */
+
+.github-fork-ribbon {
+    -webkit-box-sizing: content-box !important;
+    box-sizing: content-box !important;
 }

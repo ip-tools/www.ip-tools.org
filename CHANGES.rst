@@ -5,6 +5,7 @@ www.ip-tools.org CHANGES
 
 next release
 ------------
+- Improve layout by applying flexbox adjustments
 
 2017-12-01 0.6.0
 ----------------
