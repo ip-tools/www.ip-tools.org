@@ -1,7 +1,7 @@
 {
     "name": "www.ip-tools.org",
     "description": "Sources of www.ip-tools.org.",
-    "version": "0.7.0",
+    "version": "0.8.0",
     "license": "CC-BY-SA-4.0",
     "author": {
         "name": "Andreas Motl",
