@@ -5,6 +5,9 @@ www.ip-tools.org CHANGES
 
 next release
 ------------
+
+2019-11-07 0.8.0
+----------------
 - Update release tooling
 - Upgrade to materialize-css 1.0.0
 - Adjust URL hash to support browsing state/history
