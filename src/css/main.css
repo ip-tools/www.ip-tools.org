@@ -69,14 +69,10 @@ i.artefact {
 }
 
 
-/* Layout */
+/* Page sections */
 
-.align-center {
-    text-align: center;
-}
-
-.align-right {
-    text-align: right;
+.subtitle {
+    font-weight: 300;
 }
 
 .tabs .tab a {
@@ -99,6 +95,17 @@ i.artefact {
     padding-top: 1px;
     padding-bottom: 1px;
     margin-bottom: 0px;
+}
+
+
+/* Layout */
+
+.align-center {
+    text-align: center;
+}
+
+.align-right {
+    text-align: right;
 }
 
 .btn-narrow {
