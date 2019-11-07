@@ -1,6 +1,6 @@
-#############################
-IP Tools content attributions
-#############################
+#####################################
+www.ip-tools.org content attributions
+#####################################
 
 The copyright and trademarks of particular images, pictograms and brand
 names are held by their respective owners, unless otherwise noted.

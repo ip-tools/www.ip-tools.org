@@ -5,4 +5,4 @@
 /node_modules
 yarn-error.log
 yarn.lock
-/.venv27
+/.venv*
