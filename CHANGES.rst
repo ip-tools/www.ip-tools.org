@@ -6,6 +6,7 @@ www.ip-tools.org CHANGES
 next release
 ------------
 - Update release tooling
+- Upgrade to materialize-css 1.0.0
 
 2019-11-06 0.7.0
 ----------------

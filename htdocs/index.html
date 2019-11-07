@@ -57,7 +57,7 @@
         <div class="row">
 
             <!-- Navigation -->
-            <div class="col s12">
+            <div class="s12">
                 <ul id="navigation" class="tabs">
                     <li class="tab col s4"><a href="#applications">Applications</a></li>
                     <li class="tab col s4"><a href="#modules">Modules</a></li>
@@ -65,13 +65,13 @@
                 </ul>
             </div>
 
-            <div id="modules" class="col s12">
+            <div id="modules" class="page">
 
 
                 <!-- Python language -->
-                <div class="row section-header">
+                <div class="row">
 
-                    <div class="col s12">
+                    <div class="s12">
                         <div class="card-panel section-header">
                             <p class="">
                                 Software modules written in the Python programming language.
@@ -110,7 +110,8 @@
 
                                 <h5>Synopsis</h5>
                                 <div class="codehilite">
-                                    <div class="syntax"><pre><span></span><span class="c1"># Instantiate client</span>
+                                    <div class="syntax"><pre>
+    <span class="c1"># Instantiate client</span>
     <span class="kn">import</span> <span class="nn">epo_ops</span>
     <span class="n">client</span> <span class="o">=</span> <span class="n">epo_ops</span><span class="o">.</span><span class="n">Client</span><span class="p">(</span><span class="n">key</span><span class="o">=</span><span class="s1">'abc'</span><span class="p">,</span> <span class="n">secret</span><span class="o">=</span><span class="s1">'xyz'</span><span class="p">)</span>
 
@@ -220,7 +221,8 @@ uspto-pbd get <span class="s2">"2017/0293197"</span> <span class="se">\</span>
                             <div class="card-content">
                                 <span class="card-title activator">USPTO TSDR client<i class="material-icons right">more_vert</i></span>
                                 <p class="short-description">
-                                    A library to obtain trademark status and other information from the USPTO Trademark Status & Document Retrieval system (TSDR)
+                                    Plumage is a library to obtain trademark status and other information
+                                    from the USPTO Trademark Status & Document Retrieval system (TSDR)
                                     with implementations for Python and .NET.
                                 </p>
                                 <div class="author">
@@ -230,7 +232,8 @@ uspto-pbd get <span class="s2">"2017/0293197"</span> <span class="se">\</span>
                             <div class="card-reveal">
                                 <span class="card-title grey-text text-darken-4">USPTO TSDR client<i class="material-icons right">close</i></span>
                                 <p>
-                                    A library to obtain trademark status and other information from the USPTO Trademark Status & Document Retrieval system (TSDR)
+                                    Plumage is a library to obtain trademark status and other information
+                                    from the USPTO Trademark Status & Document Retrieval system (TSDR)
                                     with implementations for Python and .NET.
                                     <br/><br/>
 
@@ -290,9 +293,9 @@ uspto-pbd get <span class="s2">"2017/0293197"</span> <span class="se">\</span>
 
 
                 <!-- Ruby language -->
-                <div class="row section-header">
+                <div class="row">
 
-                    <div class="col s12">
+                    <div class="s12">
                         <div class="card-panel section-header">
                             <p>
                                 Software modules written in the Ruby programming language.
@@ -414,9 +417,9 @@ uspto-pbd get <span class="s2">"2017/0293197"</span> <span class="se">\</span>
 
 
                 <!-- R language -->
-                <div class="row section-header">
+                <div class="row">
 
-                    <div class="col s12">
+                    <div class="s12">
                         <div class="card-panel section-header">
                             <p>
                                 Software modules written in the R programming language.
@@ -597,9 +600,11 @@ drones <span class="o">&lt;-</span> lens_search<span class="p">(</span>
             </div>
 
 
-            <div id="applications">
+            <div id="applications" class="page">
 
-                <div class="col s12">
+                <div class="row">
+
+                <div class="s12">
                     <div class="card-panel section-header">
                         <p class="">
                             Applications from the community.
@@ -870,9 +875,12 @@ drones <span class="o">&lt;-</span> lens_search<span class="p">(</span>
                         </div>
                     </div>
                 </div>
+                </div>
 
 
-                <div class="col s12">
+                <div class="row">
+
+                <div class="s12">
                     <div class="card-panel section-header">
                         <p class="">
                             Applications from the USPTO.
@@ -1001,12 +1009,12 @@ drones <span class="o">&lt;-</span> lens_search<span class="p">(</span>
                         </div>
                     </div>
                 </div>
-
+                </div>
 
             </div>
 
 
-            <div id="resources">
+            <div id="resources" class="page">
 
                 <!-- WIPO Manual on Open Source Patent Analytics -->
                 <div class="col s12 m12 m6">
