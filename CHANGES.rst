@@ -5,6 +5,7 @@ www.ip-tools.org CHANGES
 
 next release
 ------------
+- Upgrade to webpack 5
 
 
 2019-11-07 0.9.0

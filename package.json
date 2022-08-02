@@ -27,21 +27,22 @@
     },
     "scripts": {
         "watch": "webpack --config=webpack.develop.config.js --watch --hot",
-        "build": "webpack --config=webpack.develop.config.js --display detailed --display-error-details --progress",
-        "release": "webpack --config=webpack.release.config.js --display detailed --display-error-details --progress"
+        "build": "webpack --config=webpack.develop.config.js --progress",
+        "release": "webpack --config=webpack.release.config.js --progress"
     },
     "devDependencies": {
         "csi": "https://github.com/LexmarkWeb/csi.js",
-        "css-loader": "0.28.7",
-        "expose-loader": "0.7.3",
-        "file-loader": "1.1.5",
-        "github-fork-ribbon-css": "0.2.1",
-        "jquery": "3.2.1",
-        "materialize-css": "1.0.0",
-        "pygments-css": "1.0.0",
-        "style-loader": "0.19.0",
-        "webpack": "3.5.6",
-        "webpack-dev-server": "2.7.1",
-        "webpack-notifier": "1.5.0"
+        "css-loader": "^5",
+        "expose-loader": "^4",
+        "file-loader": "^6",
+        "github-fork-ribbon-css": "^0.2",
+        "jquery": "^3.6",
+        "materialize-css": "^1",
+        "pygments-css": "^1",
+        "style-loader": "^3",
+        "webpack": "^5",
+        "webpack-cli": "^4",
+        "webpack-dev-server": "^4",
+        "webpack-notifier": "^1"
     }
 }
