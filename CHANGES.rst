@@ -6,6 +6,7 @@ www.ip-tools.org CHANGES
 next release
 ------------
 - Upgrade to webpack 5
+- Migrate from ``materialise-css`` to ``@materializecss/materialize``
 
 
 2019-11-07 0.9.0

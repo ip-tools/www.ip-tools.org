@@ -37,7 +37,7 @@
         "file-loader": "^6",
         "github-fork-ribbon-css": "^0.2",
         "jquery": "^3.6",
-        "materialize-css": "^1",
+        "@materializecss/materialize": "^1",
         "pygments-css": "^1",
         "style-loader": "^3",
         "webpack": "^5",
