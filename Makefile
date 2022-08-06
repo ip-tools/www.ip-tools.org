@@ -14,7 +14,7 @@ webserver:
 # Configuration
 # -------------
 
-$(eval venvpath     := .venv_util)
+$(eval venvpath     := .venv)
 $(eval pip          := $(venvpath)/bin/pip)
 $(eval python       := $(venvpath)/bin/python)
 $(eval pytest       := $(venvpath)/bin/pytest)
@@ -24,7 +24,7 @@ $(eval sphinx       := $(venvpath)/bin/sphinx-build)
 
 # Setup Python virtualenv
 setup-virtualenv:
-	@test -e $(python) || `command -v virtualenv` --python=python3 --no-site-packages $(venvpath)
+	@test -e $(python) || python3 -m venv $(venvpath)
 
 
 
